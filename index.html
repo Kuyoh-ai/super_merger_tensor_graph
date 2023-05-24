@@ -25,13 +25,17 @@
             width: 1px;
             background-color: black;
         }
+        .label {
+            position: absolute;
+            top: 30px;
+        }
     </style>
 </head>
 <body>
     <label for="alpha">Alpha: </label>
-    <input type="number" id="alpha" min="0" max="1" step="0.01" oninput="updateGraph()">
+    <input type="number" id="alpha" min="0" max="1" step="0.05" value="0" oninput="updateGraph()">
     <label for="beta">Beta: </label>
-    <input type="number" id="beta" min="0" max="1" step="0.01" oninput="updateGraph()">
+    <input type="number" id="beta" min="0" max="1" step="0.05" value="0" oninput="updateGraph()">
     <div>
       <span>Red = Model_A, Green = Model_B</span>
     </div>
